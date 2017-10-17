@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="3dp"
+    android:layout_marginRight="3dp"
+    android:clickable="true"
+    android:foreground="?android:attr/selectableItemBackground"
+    card_view:cardCornerRadius="0dp"
+    card_view:cardElevation="1dp"
+    card_view:cardPreventCornerOverlap="false"
+    card_view:cardUseCompatPadding="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/padding10">
+
+        <LinearLayout
+            android:id="@+id/adapter_pos_result_root_edit_sum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/adapter_pos_result_plus_button"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@mipmap/ic_plus_box_green" />
+
+            <TextView
+                android:id="@+id/adapter_pos_result_quantity"
+                style="@style/AppTheme.Sumi.Text.BigBlack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:gravity="center"
+                android:text="0" />
+
+            <ImageButton
+                android:id="@+id/adapter_pos_result_minus_button"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@mipmap/ic_minus_box_red" />
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/adapter_pos_result_name"
+            style="@style/AppTheme.Sumi.Text.BigBlack"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginRight="5dp"
+            android:layout_toLeftOf="@id/adapter_pos_result_root_edit_sum"
+            android:maxLines="3"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/adapter_pos_result_total_harga"
+            style="@style/AppTheme.Sumi.Text.RegulerBlack"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/adapter_pos_result_name"
+            android:layout_marginTop="@dimen/margin" />
+
+    </RelativeLayout>
+</android.support.v7.widget.CardView>
+

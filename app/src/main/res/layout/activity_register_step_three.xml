@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <include layout="@layout/transaku_toolbar" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/margin"
+        android:orientation="vertical"
+        android:padding="@dimen/padding10"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <TextView
+            style="@style/AppTheme.Sumi.Text.Title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/registration_page_title" />
+
+        <Spinner
+            android:id="@+id/regiter_step_three_spin_business_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin16"
+            android:background="@drawable/bg_round_accent" />
+
+        <EditText
+            android:id="@+id/regiter_step_three_et_store_name"
+            style="@style/AppTheme.Sumi.EditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin"
+            android:drawableLeft="@drawable/ic_home_24dp"
+            android:hint="@string/store_name_label"
+            android:maxLines="2" />
+
+        <TextView
+            android:id="@+id/regiter_step_three_upload_profile"
+            style="@style/AppTheme.Sumi.Text.RegulerWhite"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin"
+            android:layout_marginTop="@dimen/margin"
+            android:background="@color/colorPrimary"
+            android:clickable="true"
+            android:hint="Upload Foto Profile"
+            android:padding="@dimen/padding"
+            android:textColorHint="@android:color/white" />
+
+        <TextView
+            android:id="@+id/regiter_step_three_upload_ktp"
+            style="@style/AppTheme.Sumi.Text.RegulerWhite"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin"
+            android:background="@color/colorPrimary"
+            android:clickable="true"
+            android:hint="Upload Foto KTP"
+            android:padding="@dimen/padding"
+            android:textColorHint="@android:color/white" />
+
+        <include layout="@layout/input_photo_profile_ktp" />
+
+        <Button
+            android:id="@+id/regiter_step_three_bt_next"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin"
+            android:text="@string/registration_label"
+            android:theme="@style/AppTheme.Sumi.RedButton" />
+
+    </LinearLayout>
+
+</android.support.design.widget.CoordinatorLayout>

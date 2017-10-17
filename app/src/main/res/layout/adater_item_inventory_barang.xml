@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardUseCompatPadding="true"
+    android:layout_margin="@dimen/margin4"
+    android:foreground="?android:attr/selectableItemBackground">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/adapter_item_invBar_root_top"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/padding10">
+
+            <ImageView
+                android:id="@+id/adapter_item_invBar_inventory_image"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_logo_placeholder"
+                />
+
+            <Button
+                android:id="@+id/adapter_item_invBar_delete_button"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@mipmap/ic_delete" />
+
+            <Button
+                android:id="@+id/adapter_item_invBar_edit_button"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/margin"
+                android:layout_toLeftOf="@id/adapter_item_invBar_delete_button"
+                android:background="@mipmap/ic_big_pencil" />
+
+            <Button
+                android:id="@+id/adapter_item_invBar_cart_button"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/margin"
+                android:layout_toLeftOf="@id/adapter_item_invBar_edit_button"
+                android:background="@mipmap/ic_cart_yellow" />
+
+            <Button
+                android:id="@+id/adapter_item_invBar_restock_button"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_centerVertical="true"
+                android:visibility="gone"
+                android:layout_marginRight="@dimen/margin"
+                android:layout_toLeftOf="@id/adapter_item_invBar_edit_button"
+                android:background="@mipmap/ic_restock_inv" />
+
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@id/adapter_item_invBar_cart_button"
+                android:layout_toRightOf="@id/adapter_item_invBar_inventory_image"
+                android:orientation="vertical"
+                android:padding="5dp">
+
+                <TextView
+                    android:id="@+id/adapter_item_invBar_inventory_title"
+                    style="@style/AppTheme.Sumi.Text.RegulerBlack"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:text="Tepung Terigu "
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/adapter_item_invBar_inventory_stock"
+                    style="@style/AppTheme.Sumi.Text.TinyBlack"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Stock : 100 Gram" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/adapter_item_invBar_line"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/adapter_item_invBar_root_top"
+            android:background="@color/background_grey" />
+
+        <LinearLayout
+            android:id="@+id/adapter_item_invBar_root_bottom_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/adapter_item_invBar_line"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="@dimen/padding">
+
+            <TextView
+                style="@style/AppTheme.Sumi.Text.TinyBlack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:text="Harga Jual :" />
+
+            <TextView
+                android:id="@+id/adapter_item_invBar_inventory_harga_jual"
+                style="@style/AppTheme.Sumi.Text.RegulerBlack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rp. 10.000.000"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/adapter_item_invBar_root_bottom_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/adapter_item_invBar_line"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="@dimen/padding10">
+
+            <TextView
+                style="@style/AppTheme.Sumi.Text.TinyBlack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:text="Harga Beli :" />
+
+            <TextView
+                android:id="@+id/adapter_item_invBar_inventory_harga_beli"
+                style="@style/AppTheme.Sumi.Text.RegulerBlack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rp. 10.000.000"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+    </RelativeLayout>
+</android.support.v7.widget.CardView>

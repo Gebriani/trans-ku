@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal">
+
+    <view
+        class="id.co.sumi.transaku.utils.CropImageView"
+        android:id="@+id/image_view"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_x="0dip"
+        android:layout_y="0dip"
+        android:background="#55000000" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal"
+        android:paddingLeft="10dip"
+        android:paddingRight="10dip">
+
+
+        <Button
+            android:id="@+id/discard"
+            android:theme="@style/AppTheme.Sumi.WhiteButton"
+            android:layout_width="80dp"
+            android:layout_height="fill_parent"
+            android:layout_alignParentLeft="true"
+            android:text="@string/cancel" />
+
+        <ImageButton
+            android:id="@+id/rotateLeft"
+            style="@style/MyColorButton"
+            android:layout_width="50dp"
+            android:layout_height="fill_parent"
+            android:layout_toRightOf="@id/discard"
+            android:src="@mipmap/ic_rotate_left_red" />
+
+        <ImageButton
+            android:id="@+id/rotateRight"
+            style="@style/MyColorButton"
+            android:layout_width="50dp"
+            android:layout_height="fill_parent"
+            android:layout_toRightOf="@id/rotateLeft"
+            android:src="@mipmap/ic_rotate_right_red" />
+
+        <Button
+            android:id="@+id/save"
+            android:theme="@style/AppTheme.Sumi.RedButton"
+            android:layout_width="80dp"
+            android:layout_height="fill_parent"
+            android:layout_toRightOf="@id/rotateRight"
+            android:text="@string/submit_label"/>
+
+    </RelativeLayout>
+</RelativeLayout>

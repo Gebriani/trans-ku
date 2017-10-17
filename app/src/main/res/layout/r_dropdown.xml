@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tvDropdown"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_vertical"
+    android:layout_marginLeft="@dimen/margin_quadruple"
+    android:background="@drawable/bg_round_accent"
+    android:drawableLeft="@drawable/ic_person_outline_black_24dp"
+    android:drawablePadding="@dimen/padding"
+    android:gravity="center_vertical"
+    android:maxLines="1"
+    android:padding="@dimen/padding"
+    android:textColor="@color/grey_500"
+    android:textSize="@dimen/font_reguler" />

@@ -1,0 +1,278 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppThemeBase" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="windowActionBar">false</item>
+    </style>
+
+    <style name="AppTheme" parent="AppThemeBase" />
+
+    <style name="AppTheme.Dark" parent="AppTheme">
+        <item name="colorControlNormal">@color/grey_500
+        </item> <!--HIGHTLIGHT TEXTINPUT & HOME AS UP COLOR TINT-->
+        <item name="colorControlActivated">@color/grey_300</item>
+        <item name="colorControlHighlight">@color/white</item>
+        <item name="android:textViewStyle">@style/DarkTextViewStyle</item>
+        <item name="android:editTextStyle">@style/DarkEditTextStyle</item>
+        <item name="android:buttonStyle">@style/DarkButtonStyle</item>
+        <item name="buttonStyle">@style/DarkButtonStyle</item>
+        <item name="editTextStyle">@style/DarkEditTextStyle</item>
+    </style>
+
+    <style name="AppTheme.Dark.Toolbar" parent="AppTheme.Dark">
+        <item name="colorControlNormal">@color/grey_300
+        </item> <!--HIGHTLIGHT TEXTINPUT & HOME AS UP COLOR TINT-->
+    </style>
+
+    <style name="AppTheme.Light" parent="AppTheme">
+        <item name="colorControlNormal">@color/grey_500
+        </item> <!--HIGHTLIGHT TEXTINPUT & HOME AS UP COLOR TINT-->
+        <item name="colorControlActivated">@color/grey_500</item>
+        <item name="colorControlHighlight">@color/colorAccent</item>
+        <item name="android:textViewStyle">@style/TextViewStyle</item>
+        <item name="android:editTextStyle">@style/EditTextStyle</item>
+        <item name="editTextStyle">@style/EditTextStyle</item>
+        <item name="android:textColorHint">@color/t_primary_30</item>
+    </style>
+
+    <!--DEFAULT VIEW STYLE-->
+    <style name="TextViewStyle" parent="android:Widget.TextView">
+        <item name="android:textColor">@color/t_primary_80</item>
+    </style>
+
+    <style name="EditTextStyle" parent="android:Widget.EditText">
+        <item name="android:textColor">@color/t_primary_80</item>
+        <item name="android:textColorHint">@color/t_primary_30</item>
+        <item name="android:paddingTop">0dp</item>
+    </style>
+
+    <!--DARK VIEW STYLE-->
+    <style name="DarkTextViewStyle" parent="android:Widget.TextView">
+        <item name="android:textColor">@color/t_primary_80</item>
+    </style>
+
+    <style name="DarkEditTextStyle" parent="android:Widget.EditText">
+        <item name="android:textColor">@color/t_primary_80</item>
+        <item name="android:textColorHint">@color/t_primary_30</item>
+    </style>
+
+    <style name="DarkButtonStyle" parent="Widget.AppCompat.Button.Colored">
+        <item name="android:textColor">@color/t_primary_80</item>
+    </style>
+
+
+    <!--BUTTONs-->
+    <!--<style name="ButtonAccent" parent="Widget.AppCompat.Button.Colored">-->
+    <!--<item name="colorButtonNormal">@color/colorAccent</item>-->
+    <!--<item name="android:textColor">@color/t_primary_80</item>-->
+    <!--<item name="colorControlHighlight">@color/indigo_800</item>-->
+    <!--</style>-->
+
+    <style name="RobotoButtonStyle" parent="android:Widget.Holo.Button">
+        <item name="android:fontFamily">sans-serif-light</item>
+    </style>
+
+    <style name="PrimaryRaisedButtonStyle" parent="RobotoButtonStyle">
+        <item name="android:background">@drawable/button_primary</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/font_reg</item>
+        <item name="android:minHeight">36dp</item>
+        <item name="android:padding">8dp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:minWidth">64dp</item>
+        <item name="textAllCaps">true</item>
+    </style>
+
+    <!--SignIn Boarding Style-->
+    <style name="BoardingFrame" parent="AppTheme.Dark" />
+
+    <!--Home Style-->
+    <style name="HomePage" parent="AppTheme.Dark" />
+
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="TextLabel" parent="TextAppearance.Design.Hint">
+        <item name="android:textSize">@dimen/font_reguler</item>
+    </style>
+
+
+    <style name="AppTheme.Sumi" />
+
+    <style name="AppTheme.Sumi.Text" />
+
+    <style name="AppTheme.Sumi.Text.Title">
+        <item name="android:textSize">@dimen/font_reguler</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+    </style>
+
+    <style name="AppTheme.Sumi.Text.RegulerRed">
+        <item name="android:textSize">@dimen/font_reguler</item>
+        <item name="android:textColor">@color/t_primary_80</item>
+        <item name="android:drawablePadding">@dimen/padding</item>
+    </style>
+
+    <style name="AppTheme.Sumi.Text.RegulerBlack">
+        <item name="android:textSize">@dimen/font_reguler</item>
+        <item name="android:textColor">@color/charcoal</item>
+        <item name="android:drawablePadding">5dp</item>
+    </style>
+
+    <style name="AppTheme.Sumi.Text.TinyBlack">
+        <item name="android:textSize">@dimen/font_small</item>
+        <item name="android:textColor">@color/charcoal</item>
+        <item name="android:drawablePadding">5dp</item>
+    </style>
+
+    <style name="AppTheme.Sumi.Text.TinyWhite">
+        <item name="android:textSize">@dimen/font_small</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="AppTheme.Sumi.Text.RegulerWhite">
+        <item name="android:textSize">@dimen/font_reguler</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <!--<style name="AppTheme.Sumi.Text.MediumWhite">-->
+    <!--<item name="android:textSize">@dimen/font_xmedium</item>-->
+    <!--<item name="android:textColor">@color/white</item>-->
+    <!--</style>-->
+
+    <style name="AppTheme.Sumi.Text.BigBlack">
+        <item name="android:textSize">@dimen/font_reguler</item>
+        <item name="android:textColor">@color/charcoal</item>
+    </style>
+
+    <style name="AppTheme.Sumi.Text.SmallGrey">
+        <item name="android:textSize">@dimen/font_small</item>
+        <item name="android:textColor">@color/grey_600</item>
+        <item name="android:padding">@dimen/padding</item>
+    </style>
+
+    <style name="AppTheme.Sumi.Text.HintBlack" parent="TextAppearance.Design.Hint">
+        <item name="android:textSize">@dimen/font_reguler</item>
+        <item name="android:textColor">@color/charcoal</item>
+    </style>
+
+
+    <style name="AppTheme.Sumi.EditText">
+        <item name="android:textSize">@dimen/font_reguler</item>
+        <item name="android:textColor">@color/t_primary_80</item>
+        <item name="android:padding">@dimen/padding</item>
+        <item name="android:drawablePadding">@dimen/padding</item>
+        <item name="android:background">@drawable/bg_round_accent</item>
+    </style>
+
+
+    <style name="AppTheme.Sumi.EditTextBlack">
+        <item name="android:textSize">@dimen/font_reguler</item>
+        <item name="android:textColor">@color/charcoal</item>
+        <item name="android:padding">@dimen/padding</item>
+        <item name="android:drawablePadding">@dimen/padding</item>
+        <item name="android:textColorHint">@color/grey_600</item>
+    </style>
+
+
+    <style name="AppTheme.Sumi.Button" parent="Widget.AppCompat.Button.Colored">
+        <item name="android:textSize">@dimen/font_reguler</item>
+        <item name="android:textColor">@color/t_primary_80</item>
+        <item name="android:background">@drawable/outline</item>
+    </style>
+
+    <style name="AppTheme.Sumi.YellowButton" parent="Widget.AppCompat.Button.Colored">
+        <item name="android:textSize">@dimen/font_reguler</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:minWidth">120dp</item>
+        <item name="android:background">@drawable/btn_yellow</item>
+    </style>
+
+    <style name="AppTheme.Sumi.YellButton" parent="Widget.AppCompat.Button.Colored">
+        <item name="android:textSize">@dimen/font_reguler</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:minWidth">120dp</item>
+        <item name="colorButtonNormal">@color/colorAccent</item>
+        <item name="colorControlHighlight">@color/colorPrimary</item>
+
+    </style>
+
+    <style name="AppTheme.Sumi.BlackButton" parent="Widget.AppCompat.Button.Colored">
+        <item name="android:textSize">@dimen/font_reguler</item>
+        <item name="android:minWidth">130dp</item>
+        <item name="android:textColor">@color/charcoal</item>
+        <item name="colorButtonNormal">@color/grey_300</item>
+        <item name="colorControlHighlight">@color/colorAccent</item>
+    </style>
+
+    <style name="AppTheme.Sumi.DialogBox" parent="Theme.AppCompat.Light.Dialog">
+        <item name="android:windowMinWidthMinor">100%</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.Sumi.TabLayoutStyle" parent="Widget.Design.TabLayout">
+        <item name="tabMaxWidth">264dp</item>
+        <item name="tabIndicatorColor">@color/white</item>
+        <item name="tabIndicatorHeight">2dp</item>
+        <item name="tabPaddingStart">8dp</item>
+        <item name="tabPaddingEnd">8dp</item>
+        <item name="tabBackground">?attr/selectableItemBackground</item>
+        <item name="android:textSize">@dimen/font_reguler</item>
+        <item name="tabSelectedTextColor">@android:color/white</item>
+        <item name="textAllCaps">false</item>
+    </style>
+
+    <style name="TabLayoutStyle" parent="Widget.Design.TabLayout">
+        <item name="tabMaxWidth">264dp</item>
+        <item name="tabIndicatorColor">@color/white</item>
+        <item name="tabIndicatorHeight">2dp</item>
+        <item name="tabPaddingStart">8dp</item>
+        <item name="tabPaddingEnd">8dp</item>
+        <item name="tabBackground">?attr/selectableItemBackground</item>
+        <item name="tabTextAppearance">@style/TabTextAppearance</item>
+        <item name="tabSelectedTextColor">@android:color/white</item>
+    </style>
+
+    <style name="TabTextAppearance" parent="TextAppearance.Design.Tab">
+        <item name="android:textSize">@dimen/font_reguler</item>
+        <item name="textAllCaps">false</item>
+    </style>
+
+    <style name="AppTheme.Sumi.RedButton" parent="Widget.AppCompat.Button.Colored">
+        <item name="android:textSize">@dimen/font_button</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:minWidth">150dp</item>
+        <item name="colorButtonNormal">@color/colorPrimary</item>
+        <item name="colorControlHighlight">@color/colorAccent</item>
+    </style>
+
+    <style name="AppTheme.Sumi.WhiteButton" parent="Widget.AppCompat.Button.Colored">
+        <item name="android:textSize">@dimen/font_button</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="android:minWidth">150dp</item>
+        <item name="colorButtonNormal">@color/white</item>
+        <item name="colorControlHighlight">@color/colorAccent</item>
+    </style>
+
+
+    <style name="AppTheme.Sumi.GreenButton" parent="Widget.AppCompat.Button.Colored">
+        <item name="android:textSize">@dimen/font_button</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:minWidth">150dp</item>
+        <item name="colorButtonNormal">@color/green_800</item>
+        <item name="colorControlHighlight">@color/colorAccent</item>
+    </style>
+
+
+    <style name="MyColorButton" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorButtonNormal">#FFFFFF</item>
+    </style>
+
+</resources>

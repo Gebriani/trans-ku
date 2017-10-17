@@ -1,0 +1,55 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="nav_header_vertical_spacing">16dp</dimen>
+    <dimen name="nav_header_height">160dp</dimen>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+
+
+    <!--MARGIN-->
+    <dimen name="margin_quarter">2dp</dimen>
+    <dimen name="margin_quadruple">32dp</dimen>
+    <dimen name="margin_xtra">48dp</dimen>
+
+    <!--PADDING-->
+    <dimen name="padding_quarter">2dp</dimen>
+    <dimen name="padding_half">4dp</dimen>
+    <dimen name="padding_double">16dp</dimen>
+    <dimen name="padding_triple">24dp</dimen>
+    <dimen name="padding_quadruple">32dp</dimen>
+    <dimen name="padding_xtra">48dp</dimen>
+
+    <!--FONT-->
+    <dimen name="font_reg">14sp</dimen>
+    <dimen name="font_medium">16sp</dimen>
+    <dimen name="font_xbig">25sp</dimen>
+    <dimen name="font_xxbig">30sp</dimen>
+
+
+    <!--RADIUS-->
+    <dimen name="radius">4dp</dimen>
+    <dimen name="detail_backdrop_height">256dp</dimen>
+    <dimen name="card_margin">16dp</dimen>
+    <dimen name="list_item_avatar_size">40dp</dimen>
+
+    <dimen name="image_width">80dp</dimen>
+    <dimen name="image_final_width">40dp</dimen>
+    <dimen name="spacing_normal">16dp</dimen>
+
+
+    <dimen name="font_reguler">15sp</dimen>
+    <dimen name="font_small">12sp</dimen>
+    <dimen name="font_button">14sp</dimen>
+
+    <dimen name="padding">8dp</dimen>
+    <dimen name="padding10">10dp</dimen>
+    <dimen name="padding15">15dp</dimen>
+    <dimen name="margin">8dp</dimen>
+    <dimen name="margin12">12dp</dimen>
+    <dimen name="margin24">24dp</dimen>
+    <dimen name="margin16">16dp</dimen>
+    <dimen name="margin4">4dp</dimen>
+
+</resources>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:enterFadeDuration="@android:integer/config_shortAnimTime"
+    android:exitFadeDuration="@android:integer/config_longAnimTime">
+    <item android:state_pressed="true" android:drawable="@drawable/ic_google_active" /> <!-- pressed -->
+    <item android:drawable="@drawable/ic_google_idle" /> <!-- default -->
+</selector>

@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_grey">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:animateLayoutChanges="true"
+            android:orientation="vertical"
+            android:padding="@dimen/padding">
+
+            <EditText
+                android:id="@+id/dialog_add_et_nama"
+                style="@style/AppTheme.Sumi.EditTextBlack"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin"
+                android:hint="@string/nama"
+                android:inputType="textPersonName" />
+
+            <TextView
+                style="@style/AppTheme.Sumi.Text.SmallGrey"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Kategori" />
+
+            <Spinner
+                android:id="@+id/dialog_add_sp_kategori"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin"
+                android:background="@drawable/bg_round_accent" />
+
+            <EditText
+                android:id="@+id/dialog_add_et_deskripsi"
+                style="@style/AppTheme.Sumi.EditTextBlack"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin"
+                android:hint="@string/description" />
+
+            <Switch
+                android:id="@+id/dialog_add_isForSell"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/is_order_to_sell"
+                android:textSize="@dimen/font_reguler"
+                android:visibility="gone" />
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/dialog_add_textinput_buyprice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin"
+                android:visibility="gone">
+
+                <EditText
+                    android:id="@+id/dialog_add_et_buy_price"
+                    style="@style/AppTheme.Sumi.Text.RegulerBlack"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/buy_price"
+                    android:inputType="number"
+                    tools:text="1000" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin">
+
+                <EditText
+                    android:id="@+id/dialog_add_et_sell_price"
+                    style="@style/AppTheme.Sumi.Text.RegulerBlack"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/sell_price"
+                    android:inputType="number"
+                    tools:text="1000" />
+            </android.support.design.widget.TextInputLayout>
+
+            <TextView
+                style="@style/AppTheme.Sumi.Text.SmallGrey"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Quantity Units" />
+
+            <Spinner
+                android:id="@+id/dialog_add_sp_qty_unit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin"
+                android:background="@drawable/bg_round_accent" />
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin">
+
+                <EditText
+                    android:id="@+id/dialog_add_et_jumlah"
+                    style="@style/AppTheme.Sumi.Text.RegulerBlack"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/jumlah_qty"
+                    android:inputType="numberDecimal"
+                    tools:text="10" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin"
+                android:visibility="gone">
+
+                <EditText
+                    android:id="@+id/dialog_add_et_berat"
+                    style="@style/AppTheme.Sumi.Text.RegulerBlack"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/berat_gram"
+                    android:inputType="numberDecimal"
+                    tools:text="1000" />
+            </android.support.design.widget.TextInputLayout>
+
+            <TextView
+                style="@style/AppTheme.Sumi.Text.SmallGrey"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Kondisi" />
+
+            <Spinner
+                android:id="@+id/dialog_add_sp_kondisi"
+                android:layout_width="match_parent"
+                android:layout_height="32dp"
+                android:layout_marginBottom="@dimen/margin"
+                android:entries="@array/goods_condition" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/dialog_add_bt_cancel"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin"
+                    android:layout_weight="1"
+                    android:text="@string/cancel_label"
+                    android:theme="@style/AppTheme.Sumi.WhiteButton" />
+
+                <Button
+                    android:id="@+id/dialog_add_bt_simpan"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin"
+                    android:layout_weight="1"
+                    android:text="@string/submit_label"
+                    android:theme="@style/AppTheme.Sumi.RedButton" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+
+</ScrollView>

@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <include layout="@layout/transaku_toolbar" />
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin"
+            android:foreground="?android:attr/selectableItemBackground"
+            card_view:backgroundTint="@color/grey_600"
+            card_view:cardCornerRadius="0dp"
+            card_view:cardElevation="5dp"
+            card_view:cardPreventCornerOverlap="false"
+            card_view:cardUseCompatPadding="true"
+            android:animateLayoutChanges="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:animateLayoutChanges="true"
+                android:orientation="vertical"
+                android:padding="@dimen/padding">
+
+                <EditText
+                    android:id="@+id/new_inv_et_name"
+                    style="@style/AppTheme.Sumi.EditTextBlack"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/margin"
+                    android:hint="@string/nama" />
+
+                <TextView
+                    style="@style/AppTheme.Sumi.Text.SmallGrey"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/category_str" />
+
+                <Spinner
+                    android:id="@+id/new_inv_spin_category"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/margin"
+                    android:background="@drawable/bg_round_accent" />
+
+                <EditText
+                    android:id="@+id/new_inv_et_description"
+                    style="@style/AppTheme.Sumi.EditTextBlack"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/margin"
+                    android:hint="@string/description" />
+
+                <Switch
+                    android:id="@+id/new_inv_isForSell"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/padding"
+                    android:text="@string/is_order_to_sell"
+                    android:textColor="@color/grey_600"
+                    android:textSize="@dimen/font_reguler" />
+
+                <EditText
+                    android:id="@+id/new_inv_et_buy_price"
+                    style="@style/AppTheme.Sumi.EditTextBlack"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/margin"
+                    android:hint="@string/buy_price"
+                    android:inputType="number" />
+
+
+                <EditText
+                    android:id="@+id/new_inv_et_sell_price"
+                    style="@style/AppTheme.Sumi.EditTextBlack"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/margin"
+                    android:hint="@string/sell_price"
+                    android:inputType="number"
+                    android:visibility="gone"/>
+
+                <TextView
+                    style="@style/AppTheme.Sumi.Text.SmallGrey"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/quantity_units" />
+
+                <Spinner
+                    android:id="@+id/new_inv_sp_qty_unit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/margin"
+                    android:background="@drawable/bg_round_accent" />
+
+                <EditText
+                    android:id="@+id/new_inv_et_jumlah"
+                    style="@style/AppTheme.Sumi.EditTextBlack"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/margin"
+                    android:hint="@string/jumlah_qty"
+                    android:inputType="numberDecimal" />
+
+                <EditText
+                    android:id="@+id/new_inv_et_berat"
+                    style="@style/AppTheme.Sumi.EditTextBlack"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/margin"
+                    android:hint="@string/berat_gram"
+                    android:inputType="numberDecimal"
+                    android:visibility="gone" />
+
+                <TextView
+                    style="@style/AppTheme.Sumi.Text.SmallGrey"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/condition_str" />
+
+                <Spinner
+                    android:id="@+id/new_inv_sp_kondisi"
+                    android:layout_width="match_parent"
+                    android:layout_height="32dp"
+                    android:layout_marginBottom="@dimen/margin"
+                    android:background="@drawable/bg_round_accent"
+                    android:entries="@array/goods_condition" />
+
+                <TextView
+                    android:id="@+id/new_inv_tv_uploadPic"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/margin"
+                    style="@style/AppTheme.Sumi.Text.RegulerWhite"
+                    android:hint="Upload Foto Inventory"
+                    android:textColorHint="@android:color/white"
+                    android:padding="@dimen/padding"
+                    android:clickable="true"
+                    android:background="@color/colorPrimary"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/new_inv_bt_cancel"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/margin"
+                        android:layout_weight="1"
+                        android:text="@string/cancel_label"
+                        android:theme="@style/AppTheme.Sumi.WhiteButton" />
+
+                    <Button
+                        android:id="@+id/new_inv_bt_simpan"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/margin"
+                        android:layout_weight="1"
+                        android:text="@string/submit_label"
+                        android:theme="@style/AppTheme.Sumi.RedButton" />
+
+                </LinearLayout>
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+    </android.support.v4.widget.NestedScrollView>
+
+</android.support.design.widget.CoordinatorLayout>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:id="@+id/adapter_rep_jualbarang_root"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:weightSum="2">
+
+    <TextView
+        android:id="@+id/adapter_rep_jualbarang_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        style="@style/AppTheme.Sumi.Text.RegulerBlack"
+        android:background="@drawable/cell_shape"
+        android:text="Nama Barang"
+        android:padding="@dimen/padding10"
+        android:gravity="center_vertical"
+        android:layout_weight="1"/>
+
+    <TextView
+        android:id="@+id/adapter_rep_jualbarang_sum"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        style="@style/AppTheme.Sumi.Text.RegulerBlack"
+        android:background="@drawable/cell_shape"
+        android:text="Jumlah"
+        android:layout_weight="1"
+        android:padding="@dimen/padding10"
+        android:gravity="center_vertical|right"/>
+</LinearLayout>

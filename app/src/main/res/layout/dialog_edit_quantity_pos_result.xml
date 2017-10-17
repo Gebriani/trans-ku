@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:padding="@dimen/padding10">
+    <EditText
+        android:id="@+id/dialog_edit_pos_quantity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Isi jumlah yang akan dihapus"
+        android:layout_marginBottom="@dimen/margin"/>
+
+    <Button
+        android:id="@+id/dialog_edit_pos_deleteSomeAmount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.Sumi.RedButton"
+        android:text="Hapus"/>
+
+</LinearLayout>

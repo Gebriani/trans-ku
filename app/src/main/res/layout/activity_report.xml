@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <include layout="@layout/transaku_toolbar" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/margin"
+        android:orientation="vertical"
+        android:padding="8dp"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <TextView
+            android:id="@+id/report_tv_start_date"
+            style="@style/AppTheme.Sumi.Text.RegulerBlack"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin"
+            android:background="@drawable/outline"
+            android:drawableLeft="@drawable/ic_calendar"
+            android:gravity="center_vertical"
+            android:hint="@string/choose_start_date"
+            android:padding="@dimen/padding" />
+
+        <TextView
+            android:id="@+id/report_tv_end_date"
+            style="@style/AppTheme.Sumi.Text.RegulerBlack"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin"
+            android:background="@drawable/outline"
+            android:drawableLeft="@drawable/ic_calendar"
+            android:gravity="center_vertical"
+            android:hint="@string/choose_end_date"
+            android:padding="@dimen/padding" />
+
+        <Button
+            android:id="@+id/report_bt_search"
+            style="@style/AppTheme.Sumi.RedButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginBottom="@dimen/margin"
+            android:text="@string/search_label" />
+
+        <LinearLayout
+            android:id="@+id/report_root_total"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:visibility="gone"
+            android:layout_marginBottom="@dimen/margin"
+            android:padding="@dimen/padding">
+
+            <TextView
+                style="@style/AppTheme.Sumi.Text.Title"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Total Penjualan : " />
+
+            <TextView
+                android:id="@+id/report_tv_total_penjualan"
+                style="@style/AppTheme.Sumi.Text.Title"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="right"/>
+        </LinearLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/report_rv_result"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="vertical"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+    </LinearLayout>
+
+</android.support.design.widget.CoordinatorLayout>

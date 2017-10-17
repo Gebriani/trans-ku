@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">@color/red_primary</color>
+    <color name="colorPrimaryDark">@color/red_dark</color>
+    <color name="colorAccent">#F89449</color>
+
+
+    <color name="red_primary_old">#EF3F3F</color>
+    <color name="red_dark_old">#951A1D</color>
+
+    <color name="t_black_50">#80000000</color>
+    <color name="t_primary_30">#4DB51212</color>
+    <color name="t_teal_500_70">#B3009688</color>
+    <color name="t_primary_80">#CCB51212</color>
+
+    <color name="black">#000000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="grey_300">#E0E0E0</color>
+    <color name="grey_800">#424242</color>
+    <color name="grey_700">#616161</color>
+    <color name="grey_900">#212121</color>
+    <color name="grey_500">#9E9E9E</color>
+    <color name="green_800">#2E7D32</color>
+    <color name="charcoal">#36454f</color>
+    <color name="grey_200">#EEEEEE</color>
+    <color name="grey_600">#757575</color>
+    <color name="background_grey">#f1f1f1</color>
+
+
+
+
+    <color name="red_primary">#d32f2f</color>
+    <color name="red_dark">#9a0007</color>
+    <color name="red_light">#ff6659</color>
+</resources>

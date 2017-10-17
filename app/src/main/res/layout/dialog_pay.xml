@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Masukkan jumlah bayar :"
+        style="@style/AppTheme.Sumi.Text.RegulerBlack"/>
+
+    <EditText
+        android:id="@+id/dialog_pay_et_user_money"
+        style="@style/AppTheme.Sumi.Text.RegulerBlack"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Rp."
+        android:inputType="numberDecimal"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/dialog_pay_cancel_button"
+            android:theme="@style/AppTheme.Sumi.WhiteButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin"
+            android:layout_weight="1"
+            android:text="@string/cancel_label" />
+
+        <Button
+            android:id="@+id/dialog_pay_submit_button"
+            android:theme="@style/AppTheme.Sumi.RedButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin"
+            android:layout_weight="1"
+            android:text="Oke" />
+
+    </LinearLayout>
+
+</LinearLayout>

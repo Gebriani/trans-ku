@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <include layout="@layout/transaku_toolbar" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <LinearLayout
+        android:id="@+id/inventory_root_data"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+
+        <EditText
+            android:id="@+id/inventory_search_inventory"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/margin16"
+            android:layout_marginLeft="@dimen/margin16"
+            android:layout_marginTop="@dimen/margin16"
+            android:layout_marginBottom="@dimen/margin"
+            android:background="@drawable/bg_round_accent"
+            android:drawableLeft="@mipmap/ic_search"
+            android:padding="@dimen/padding"
+            android:hint="Cari Barang"
+            android:maxLines="1"
+            style="@style/AppTheme.Sumi.Text.RegulerBlack"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="right"
+            android:layout_marginRight="@dimen/margin"
+            android:layout_marginBottom="@dimen/margin">
+
+            <Button
+                android:id="@+id/inventory_reset_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/reset_label"
+                android:theme="@style/AppTheme.Sumi.YellButton" />
+
+            <Button
+                android:id="@+id/inventory_search_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/search_label"
+                android:theme="@style/AppTheme.Sumi.RedButton" />
+
+        </LinearLayout>
+
+
+
+
+        <include layout="@layout/item_table_header_inentory" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/inventory_recycleView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="vertical"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+    </LinearLayout>
+
+</android.support.design.widget.CoordinatorLayout>
+

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_capital"
+            android:icon="@drawable/ic_attach_money_black_24dp"
+            android:title="Modal" />
+
+        <item
+            android:id="@+id/nav_inventory"
+            android:icon="@drawable/ic_assignment_black_24dp"
+            android:title="Inventory" />
+
+        <item
+            android:id="@+id/nav_buying"
+            android:icon="@drawable/ic_local_grocery_store_black_24dp"
+            android:title="Pembelian" />
+
+        <item
+            android:id="@+id/nav_selling"
+            android:icon="@drawable/ic_local_grocery_store_black_24dp"
+            android:title="Penjualan" />
+        <item android:title="Laporan">
+            <menu>
+                <item
+                    android:id="@+id/nav_rep_buying"
+                    android:icon="@drawable/ic_menu_send"
+                    android:title="Laporan Pembelian" />
+                <item
+                    android:id="@+id/nav_rep_selling"
+                    android:icon="@drawable/ic_menu_send"
+                    android:title="Laporan Penjualan" />
+                <item
+                    android:id="@+id/nav_rep_revenue"
+                    android:icon="@drawable/ic_menu_send"
+                    android:title="Laporan Pendapatan" />
+            </menu>
+        </item>
+        <!--<item-->
+            <!--android:id="@+id/nav_camera"-->
+            <!--android:icon="@drawable/ic_menu_camera"-->
+            <!--android:title="Import" />-->
+        <!--<item-->
+            <!--android:id="@+id/nav_gallery"-->
+            <!--android:icon="@drawable/ic_menu_gallery"-->
+            <!--android:title="Gallery" />-->
+        <!--<item-->
+            <!--android:id="@+id/nav_slideshow"-->
+            <!--android:icon="@drawable/ic_menu_slideshow"-->
+            <!--android:title="Slideshow" />-->
+        <!--<item-->
+            <!--android:id="@+id/nav_manage"-->
+            <!--android:icon="@drawable/ic_menu_manage"-->
+            <!--android:title="Tools" />-->
+    </group>
+
+
+
+</menu>

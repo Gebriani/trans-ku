@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/background_grey"
+    android:orientation="vertical">
+
+    <TextView
+        style="@style/AppTheme.Sumi.Text.RegulerRed"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="@dimen/padding10"
+        android:text="@string/restock_title" />
+
+    <TextView
+        android:id="@+id/dialog_restock_name"
+        style="@style/AppTheme.Sumi.Text.RegulerBlack"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/padding10"/>
+
+    <TextView
+        android:id="@+id/dialog_restock_category_name"
+        style="@style/AppTheme.Sumi.Text.RegulerBlack"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/padding10" />
+
+    <EditText
+        android:id="@+id/dialog_restock_quantity"
+        style="@style/AppTheme.Sumi.Text.RegulerBlack"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/quantity_label"
+        android:inputType="numberDecimal"
+        android:padding="@dimen/padding10"
+        android:layout_marginBottom="@dimen/margin"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/padding10">
+
+        <TextView
+            android:id="@+id/dialog_restock_qty_unit_name"
+            style="@style/AppTheme.Sumi.Text.RegulerBlack"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/dialog_restock_change_unit_name"
+            style="@style/AppTheme.Sumi.Text.RegulerBlack"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:text="@string/change_label_underline"/>
+
+    </LinearLayout>
+
+    <Spinner
+        android:id="@+id/dialog_restock_quantity_unit_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margin"
+        android:padding="@dimen/padding10"
+        android:visibility="gone"
+        android:background="@drawable/bg_round_accent"/>
+
+    <EditText
+        android:id="@+id/dialog_restock_sell_price"
+        style="@style/AppTheme.Sumi.Text.RegulerBlack"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/sell_price"
+        android:inputType="number"
+        android:padding="@dimen/padding10" />
+
+    <EditText
+        android:id="@+id/dialog_restock_buy_price"
+        style="@style/AppTheme.Sumi.Text.RegulerBlack"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/buy_price"
+        android:inputType="number"
+        android:padding="@dimen/padding10" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/dialog_restock_cancel_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin"
+            android:layout_weight="1"
+            android:text="@string/cancel_label"
+            android:theme="@style/AppTheme.Sumi.WhiteButton" />
+
+        <Button
+            android:id="@+id/dialog_restock_submit_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin"
+            android:layout_weight="1"
+            android:text="@string/submit_label"
+            android:theme="@style/AppTheme.Sumi.RedButton" />
+    </LinearLayout>
+
+</LinearLayout>

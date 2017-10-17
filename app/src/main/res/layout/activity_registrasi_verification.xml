@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/margin_quadruple"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_logo"
+        android:layout_gravity="center"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="@dimen/margin_quadruple"
+        android:layout_marginRight="@dimen/margin_quadruple"
+        android:layout_marginBottom="@dimen/margin16">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Masukan kode verifikasi yang anda terima melalui sms"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/font_reguler" />
+
+        <FrameLayout
+            android:id="@+id/login_frame_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/login_username"
+            android:layout_marginTop="@dimen/margin"
+            android:background="@drawable/bg_round_accent">
+
+            <EditText
+                android:id="@+id/regis_verification_et_inputOTP"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:drawableLeft="@drawable/ic_lock_outline_black_24dp"
+                android:hint="OTP"
+                android:inputType="textPassword"
+                android:maxLines="1"
+                android:padding="@dimen/padding"
+                style="@style/AppTheme.Sumi.Text.RegulerRed" />
+
+            <ImageView
+                android:id="@+id/regis_verification_show_password"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|center_vertical"
+                android:layout_marginRight="5dp"
+                android:src="@mipmap/ic_eye_open" />
+
+        </FrameLayout>
+
+        <Button
+            android:id="@+id/regis_verification_bt_submit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin24"
+            android:background="@drawable/outline"
+            android:text="@string/verifikasi"
+            android:textColor="@color/t_primary_80"
+            android:textSize="@dimen/font_small" />
+    </LinearLayout>
+
+</LinearLayout>

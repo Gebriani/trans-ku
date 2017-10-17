@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        style="@style/AppTheme.Sumi.Text.RegulerBlack"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Harga Jual :"
+        android:padding="@dimen/padding"/>
+
+    <EditText
+        android:id="@+id/dialog_price_harga_jual"
+        style="@style/AppTheme.Sumi.Text.RegulerBlack"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Rp."
+        android:padding="@dimen/padding" />
+
+    <TextView
+        style="@style/AppTheme.Sumi.Text.RegulerBlack"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Harga Beli :"
+        android:padding="@dimen/padding" />
+
+    <EditText
+        android:id="@+id/dialog_price_harga_beli"
+        style="@style/AppTheme.Sumi.Text.RegulerBlack"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Rp."
+        android:padding="@dimen/padding" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/dialog_price_cancel_button"
+            android:theme="@style/AppTheme.Sumi.WhiteButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin"
+            android:layout_weight="1"
+            android:text="@string/cancel_label" />
+
+        <Button
+            android:id="@+id/dialog_price_submit_button"
+            android:theme="@style/AppTheme.Sumi.RedButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin"
+            android:layout_weight="1"
+            android:text="@string/submit_label" />
+
+    </LinearLayout>
+
+</LinearLayout>

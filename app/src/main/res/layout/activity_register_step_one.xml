@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <include layout="@layout/transaku_toolbar" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/margin"
+        android:orientation="vertical"
+        android:padding="@dimen/padding10"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <TextView
+            style="@style/AppTheme.Sumi.Text.Title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/registration_page_title" />
+
+        <Spinner
+            android:id="@+id/regiter_step_one_spin_cust_type"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin16"
+            android:background="@drawable/bg_round_accent"
+            android:entries="@array/cust_type_arrays" />
+
+        <EditText
+            android:id="@+id/regiter_step_one_et_fullname"
+            style="@style/AppTheme.Sumi.EditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin16"
+            android:drawableLeft="@drawable/ic_person_outline_black_24dp"
+            android:hint="@string/fullname_label"
+            android:inputType="textPersonName"
+            android:maxLines="1" />
+
+        <EditText
+            android:id="@+id/regiter_step_one_et_email"
+            style="@style/AppTheme.Sumi.EditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin16"
+            android:drawableLeft="@drawable/ic_email_24dp"
+            android:hint="@string/email_label"
+            android:inputType="textEmailAddress"
+            android:maxLines="1" />
+
+        <EditText
+            android:id="@+id/regiter_step_one_et_password"
+            style="@style/AppTheme.Sumi.EditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin"
+            android:drawableLeft="@drawable/ic_lock_outline_black_24dp"
+            android:hint="@string/password_label"
+            android:inputType="textPassword" />
+
+        <EditText
+            android:id="@+id/regiter_step_one_et_retry_password"
+            style="@style/AppTheme.Sumi.EditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin"
+            android:drawableLeft="@drawable/ic_lock_outline_black_24dp"
+            android:hint="@string/repeat_password_label"
+            android:inputType="textPassword" />
+
+        <Spinner
+            android:id="@+id/regiter_step_one_spin_gender"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin"
+            android:background="@drawable/bg_round_accent"
+            android:entries="@array/genders_arrays" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/regiter_step_one_bt_batal"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin"
+                android:layout_weight="1"
+                android:text="@string/cancel_label"
+                android:theme="@style/AppTheme.Sumi.BlackButton" />
+
+            <Button
+                android:id="@+id/regiter_step_one_bt_next"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin"
+                android:layout_weight="1"
+                android:text="@string/next_label"
+                android:theme="@style/AppTheme.Sumi.RedButton" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</android.support.design.widget.CoordinatorLayout>

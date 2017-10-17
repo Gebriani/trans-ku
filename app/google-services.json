@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "193832752471",
+    "firebase_url": "https://sumi-transaku.firebaseio.com",
+    "project_id": "sumi-transaku",
+    "storage_bucket": "sumi-transaku.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:193832752471:android:f669050c5b2f3d43",
+        "android_client_info": {
+          "package_name": "id.co.sumi.transaku"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "193832752471-7d4e7vtmfsvqo7crqlscoeeb8qhgbkc0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC3refjZxFmdXZaDnoLshQBByssk6fIXS8"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

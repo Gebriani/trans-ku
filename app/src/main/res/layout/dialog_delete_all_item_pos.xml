@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/padding">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/AppTheme.Sumi.Text.RegulerBlack"
+        android:text="@string/delete_all_message"
+        android:layout_marginBottom="@dimen/margin"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:weightSum="3">
+
+        <Button
+            android:id="@+id/dialog_delete_item_pos_cancel"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:theme="@style/AppTheme.Sumi.BlackButton"
+            android:textSize="@dimen/font_small"
+            android:text="@string/cancel_label"/>
+
+        <Button
+            android:id="@+id/dialog_delete_item_pos_deleteAll"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:theme="@style/AppTheme.Sumi.RedButton"
+            android:textSize="@dimen/font_small"
+            android:text="Hapus Semua"/>
+
+        <Button
+            android:id="@+id/dialog_delete_item_pos_deleteAmount"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/font_small"
+            android:theme="@style/AppTheme.Sumi.YellButton"
+            android:text="Hapus Sebagian"/>
+
+    </LinearLayout>
+</LinearLayout>

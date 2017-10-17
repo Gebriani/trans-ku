@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_grey">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="@dimen/padding10">
+
+        <TextView
+            android:id="@+id/labarugi_tv_start_date"
+            style="@style/AppTheme.Sumi.Text.RegulerBlack"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin"
+            android:background="@drawable/outline"
+            android:drawableLeft="@drawable/ic_calendar"
+            android:gravity="center_vertical"
+            android:hint="@string/choose_start_date"
+            android:padding="@dimen/padding" />
+
+        <TextView
+            android:id="@+id/labarugi_tv_end_date"
+            style="@style/AppTheme.Sumi.Text.RegulerBlack"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin"
+            android:background="@drawable/outline"
+            android:drawableLeft="@drawable/ic_calendar"
+            android:gravity="center_vertical"
+            android:hint="@string/choose_end_date"
+            android:padding="@dimen/padding" />
+
+        <Button
+            android:id="@+id/labarugi_bt_search"
+            android:theme="@style/AppTheme.Sumi.RedButton"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginBottom="@dimen/margin"
+            android:text="@string/search_label" />
+
+        <TextView
+            android:id="@+id/labarugi_text_pengeluaran"
+            style="@style/AppTheme.Sumi.Text.RegulerBlack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin"
+            android:text="Pengeluaran : "
+            android:textStyle="bold"
+            android:visibility="gone" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/labarugi_rv_pengeluaran"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/labarugi_tv_sum_pengeluaran"
+            style="@style/AppTheme.Sumi.Text.RegulerBlack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginBottom="@dimen/margin"
+            android:textStyle="bold"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/labarugi_text_pemasukan"
+            style="@style/AppTheme.Sumi.Text.RegulerBlack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin"
+            android:text="Pemasukan : "
+            android:textStyle="bold"
+            android:visibility="gone"/>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/labarugi_rv_pemasukan"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:visibility="gone"/>
+
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/labarugi_tv_sum_pemasukan"
+            style="@style/AppTheme.Sumi.Text.RegulerBlack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginBottom="@dimen/margin_quadruple"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/labarugi_tv_sum_laba_rugi"
+            style="@style/AppTheme.Sumi.Text.BigBlack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center" />
+
+
+    </LinearLayout>
+</ScrollView>
+

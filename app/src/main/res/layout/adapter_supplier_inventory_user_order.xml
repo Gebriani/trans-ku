@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/adapter_pos_result_root"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_weight="5"
+    android:background="@drawable/selector_for_list"
+    android:orientation="horizontal"
+    android:padding="@dimen/padding10">
+
+    <CheckBox
+        android:id="@+id/adapter_suppInv_checkbox"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:layout_weight="0.5"/>
+
+    <TextView
+        android:id="@+id/adapter_suppInv_order_name"
+        style="@style/AppTheme.Sumi.Text.RegulerBlack"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textSize="13sp"
+        android:layout_weight="1" />
+
+    <TextView
+        android:id="@+id/adapter_suppInv_order_stock"
+        style="@style/AppTheme.Sumi.Text.RegulerBlack"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:textSize="13sp"
+        android:gravity="center" />
+
+
+    <TextView
+        android:id="@+id/adapter_suppInv_order_price"
+        style="@style/AppTheme.Sumi.Text.RegulerBlack"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:textSize="13sp"
+        android:gravity="center"/>
+
+    <TextView
+        android:id="@+id/adapter_suppInv_order_sum_order"
+        style="@style/AppTheme.Sumi.Text.RegulerBlack"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="right"
+        android:textSize="13sp"
+        android:layout_weight="1" />
+
+
+</LinearLayout>

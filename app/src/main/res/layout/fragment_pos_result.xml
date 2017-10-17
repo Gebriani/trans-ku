@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/pos_result_layout_total"
+        layout="@layout/item_total_harga"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/pos_result_recycleview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/pos_result_layout_total"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true">
+
+        <Button
+            android:id="@+id/pos_result_bt_batal"
+            android:theme="@style/AppTheme.Sumi.BlackButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin"
+            android:layout_weight="1"
+            android:text="@string/cancel_label" />
+
+        <Button
+            android:id="@+id/pos_result_bt_bayar"
+            android:theme="@style/AppTheme.Sumi.RedButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin"
+            android:layout_weight="1"
+            android:text="@string/bayar_label" />
+
+    </LinearLayout>
+
+</RelativeLayout>
+
+
+
+    <!--<?xml version="1.0" encoding="utf-8"?>-->
+<!--<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--android:orientation="vertical" android:layout_width="match_parent"-->
+<!--android:layout_height="match_parent">-->
+
+<!--<android.support.v7.widget.RecyclerView-->
+    <!--android:id="@+id/pos_result_recycleview"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"/>-->
+
+<!--<include-->
+    <!--android:id="@+id/pos_result_layout_total"-->
+    <!--layout="@layout/item_total_harga"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_width="match_parent"-->
+    <!--/>-->
+
+<!--<LinearLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:orientation="horizontal">-->
+
+    <!--<Button-->
+        <!--android:id="@+id/pos_result_bt_batal"-->
+        <!--android:theme="@style/AppTheme.Sumi.BlackButton"-->
+        <!--android:layout_width="0dp"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_margin="@dimen/margin"-->
+        <!--android:layout_weight="1"-->
+        <!--android:text="@string/cancel_label" />-->
+
+    <!--<Button-->
+        <!--android:id="@+id/pos_result_bt_bayar"-->
+        <!--android:theme="@style/AppTheme.Sumi.RedButton"-->
+        <!--android:layout_width="0dp"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_margin="@dimen/margin"-->
+        <!--android:layout_weight="1"-->
+        <!--android:text="@string/bayar_label" />-->
+
+<!--</LinearLayout>-->
+
+<!--</LinearLayout>-->

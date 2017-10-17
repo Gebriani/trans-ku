@@ -1,0 +1,225 @@
+<resources>
+    <string name="app_name">Transaku</string>
+    <integer name="gms_version">10260000</integer>
+
+    <string name="notempty">Tidak boleh kosong</string>
+    <string name="email_format">Format email salah</string>
+    <string name="notempty_username">Username / Email tidak boleh kosong</string>
+    <string name="notempty_password">Password tidak boleh kosong</string>
+    <string name="rule_password_format">Password Minimal 6 Karakter</string>
+    <string name="password_not_match">Password tidak sesuai</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+    <string name="fail">fail</string>
+    <string name="error">Error</string>
+    <string name="open">open</string>
+    <string name="internet.problem">Tidak Ada Akses Internet</string>
+    <string name="internet.problem.message">silahkan mengecek koneksi internet anda</string>
+    <string name="success">success</string>
+    <string name="connection.problem">Ada masalah dalam jaringan ke server</string>
+    <string name="connection.problem.swipe">Ada masalah dalam jaringan ke server.\nSwipe ke bawah untuk mencoba lagi.</string>
+    <string name="logout">Logout</string>
+    <string name="berat_gram">Berat</string>
+    <string name="jumlah_qty">Jumlah (Qty)</string>
+    <string name="harga_rp">Harga (Rp.)</string>
+    <string name="buy_price">Harga Beli</string>
+    <string name="sell_price">Harga Jual</string>
+
+    <string name="description">Deskripsi</string>
+    <string name="nama">Nama</string>
+    <string name="verifikasi">Verifikasi</string>
+
+    <string name="quantity_units">Quantity Units</string>
+    <string name="condition_str">Kondisi</string>
+
+    <string name="barcode">Barcode</string>
+    <string name="cancel">Cancel</string>
+    <string name="clear">Clear</string>
+    <string name="edit">Edit</string>
+    <string name="confirm">Done</string>
+    <string name="date">Date</string>
+    <string name="date_added">Date Added</string>
+    <string name="quantity">Quantity</string>
+    <string name="remove">Remove</string>
+    <string name="scan">Scan</string>
+    <string name="unit_price">Unit Price</string>
+    <string name="name">Name</string>
+    <string name="id">ID</string>
+    <string name="cash">Cash</string>
+    <string name="change">Change</string>
+    <string name="hint_search">Search by name or barcode</string>
+    <string name="hint_cash">Enter cash here</string>
+    <string name="add_new_product">Add New Inventory</string>
+    <string name="add_stock">Add A Product Lot</string>
+    <string name="previous">&lt;</string>
+    <string name="next">></string>
+    <string name="inventory">Sell Item</string>
+    <string name="sale">Sale</string>
+    <string name="report">Report</string>
+
+    <string name="dialog_quit">Are you sure you want to QUIT?</string>
+    <string name="dialog_remove_product">Are you sure you want to REMOVE this product?</string>
+    <string name="dialog_clear_sale">Are you sure you want to CLEAR this sale?</string>
+    <string name="hint_empty_sale">Sale is empty.</string>
+    <string name="quit">Quit</string>
+    <string name="no">No</string>
+    <string name="product_detail">Product Detail</string>
+    <string name="stock">Stock</string>
+    <string name="please_input_all">Please fulfill all data.</string>
+    <string name="need_money">Need</string>
+
+    <string name="edit_profile">Ubah Profile</string>
+
+
+    <string name="empty_form">Please Input This Form</string>
+
+    <string name="lang_en">English</string>
+    <string name="lang_th">ภาษาไทย (th)</string>
+    <string name="lang_jp">日本語 (jp)</string>
+    <string name="hint_lang">Please restart the application to apply this language settings.</string>
+
+
+    <string-array name="period">
+        <item>Daily</item>
+        <item>Weekly</item>
+        <item>Monthly</item>
+        <item>Yearly</item>
+    </string-array>
+
+    <style name="ButtonText">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_margin">3dp</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:shadowColor">#000000</item>
+        <item name="android:shadowDx">1</item>
+        <item name="android:shadowDy">1</item>
+        <item name="android:shadowRadius">2</item>
+    </style>
+
+
+    <!--MINE-->
+    <string name="empty_username_message">Mohon Masukkan Nama Anda</string>
+    <string name="empty_password_message">Mohon Masukkan Kata Sandi Anda</string>
+    <string name="registration_page_title">Lengkapi datamu untuk bergabung dengan Transaku</string>
+    <string name="email_label">Email</string>
+    <string name="fullname_label">Nama Lengkap</string>
+    <string name="portal_code_label">Kode Pos</string>
+    <string name="no_telphone_label">No Telephone</string>
+    <string name="store_name_label">Nama Toko</string>
+
+    <string name="no_empty_label">Tidak Boleh Kosong</string>
+
+    <string name="username_label">Username</string>
+    <string name="email_or_phone_label">Email atau No. Telp</string>
+    <string name="choose_start_date">Pilih tanggal mulai</string>
+    <string name="choose_end_date">Pilih tanggal akhir</string>
+    <string name="search_label">Cari</string>
+    <string name="reset_label">Reset</string>
+
+
+    <string name="choose_month">Pilih Bulan</string>
+    <string name="upload_photo"><u>Ungguh Photo</u></string>
+
+    <string name="is_order_to_sell">Apakah barang akan di jual ?</string>
+
+    <string name="password_label">Kata Sandi</string>
+    <string name="repeat_password_label">Ulangi Kata Sandi</string>
+    <string name="no_identity_card">Nomor KTP</string>
+    <string name="address_label">Alamat</string>
+    <string name="customer_type_title">Pilih Jenis Pengguna</string>
+    <string name="province_title">Pilih Provinsi</string>
+    <string name="city_title">Pilih Kota</string>
+    <string name="gender_title">Pilih Jenis Kelamin</string>
+
+    <string name="registration_label">Daftar</string>
+    <string name="login_label">Masuk</string>
+    <string name="logout_label">Keluar</string>
+    <string name="login_by_label">Atau masuk melalui</string>
+    <string name="submit_label">Simpan</string>
+    <string name="cancel_label">Batal</string>
+
+    <string name="scan_label">Scan</string>
+    <string name="total">Total Pembayaran :</string>
+
+    <string name="change_label_underline"><u>Ganti ?</u></string>
+
+
+    <string name="done_label">Selesai</string>
+    <string name="bayar_label">Bayar</string>
+
+    <string name="next_label">Lanjut</string>
+    <string name="add_quantity_pos">Jumlah :</string>
+
+    <string name="quantity_label">Jumlah</string>
+
+    <string name="restock_title">Restock Barang</string>
+
+    <string name="delete_all_message">Apakah anda ingin menghapus seluruh item ini ?</string>
+    <string name="pesan_label">Pesan</string>
+
+    <string name="category_str">Kategori</string>
+    <string name="preparing_card">Preparing card</string>
+    <string name="no_storage_card">No storage card</string>
+    <string name="not_enough_space">Not enough space</string>
+    <string name="saving_image">Menyimpan Image</string>
+
+    <string-array name="image_arrays">
+        <item>Gallery</item>
+        <item>Camera</item>
+        <item>Batal</item>
+    </string-array>
+
+    <string name="image_prompt">Dipilih dari:</string>
+
+    <string-array name="goods_condition">
+        <item>Baru</item>
+        <item>Bekas</item>
+    </string-array>
+
+    <string-array name="cust_type_arrays">
+        <item>- Pilih Jenis User -</item>
+        <item>Penjual</item>
+        <!--<item>Pembeli</item>-->
+    </string-array>
+
+    <string-array name="genders_arrays">
+        <item>- Pilih Jenis Kelamin -</item>
+        <item>Pria</item>
+        <item>Wanita</item>
+    </string-array>
+
+    <string-array name="menu_colors">
+        <item>#B71C1C</item>
+        <item>#F57F17</item>
+        <item>#FF80AB</item>
+        <item>#536DFE</item>
+        <item>#00E5FF</item>
+        <item>#8BC34A</item>
+        <item>#9C27B0</item>
+    </string-array>
+
+    <string-array name="search_supplier_by">
+        <item>Nama Supplier</item>
+        <item>Nama Barang</item>
+    </string-array>
+
+    <string-array name="order_supplier_by">
+        <item>Jarak Terdekat</item>
+        <!--<item>Harga Barang</item>-->
+    </string-array>
+
+    <string name="input_sum_manual"><u>Input Jumlah Lain</u></string>
+    <string name="tambah">Tambah</string>
+    <string name="alamat">Alamat</string>
+    <string name="kota">Kota</string>
+
+    <string name="order_label">Pesan</string>
+</resources>
